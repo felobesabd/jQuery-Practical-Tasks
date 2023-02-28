@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Practical jQuery</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;0,900;1,900&display=swap"
+          rel="stylesheet">
+</head>
+<body>
+<!-- Start Nav -->
+<nav class="navbar navbar-expand-lg position-fixed">
+    <div class="container">
+        <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa fa-align-right" aria-hidden="true"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link p-2 p-lg-3" aria-current="page"
+                       href="#" data-scroll="home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link p-2 p-lg-3" href="#"
+                       data-scroll="about-us">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link p-2 p-lg-3" href="#"
+                       data-scroll="services">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link p-2 p-lg-3" href="#"
+                       data-scroll="portfolio">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link p-2 p-lg-3" href="#"
+                       data-scroll="solutions">Solutions</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link p-2 p-lg-3" href="#"
+                       data-scroll="contact-us">Contact Us</a>
+                </li>
+            </ul>
+            <div class="search ps-3 pe-3 d-none d-lg-block">
+                <i class="fa fa-search" aria-hidden="true"></i>
+            </div>
+            <a class="btn btn-primary rounded-pill main-btn">Login</a>
+        </div>
+    </div>
+</nav>
+<!-- End Nav -->
+<!-- Start Drop Menu -->
+<div class="drop-menu">
+    <span><i class="fa fa-cog" aria-hidden="true"></i></span>
+    <h3>Change Color</h3>
+    Testing Color
+    <h3>Important Links</h3>
+    Testing Links
+</div>
+<!-- End Drop Menu -->
+<!-- Start Section -->
+<div id="home" class="felo">
+    <h2>Home</h2>
+    <span class="show-popup" data-popup=".first-popup">Show 1st Popup</span>
+    <span class="show-popup" data-popup=".scend-popup">Show 2nd Popup</span>
+    <!-- Start Button -->
+    <div class="buttons">
+        <button class="button form-left">
+            <span></span>
+            <span>Form Left</span>
+        </button>
+        <button class="button form-top">
+            <span></span>
+            <span>Form Top</span>
+        </button>
+        <button class="button border-left">
+            <span></span>
+            <span>Border Bottom</span>
+        </button>
+    </div>
+    <!-- End Button -->
+    <!-- Start Message -->
+    <div class="message">
+        This Is Message Important
+    </div>
+    <!-- End Message -->
+    <!-- Start Progress -->
+    <div class="skill">
+        <h3>HTML <span></span></h3>
+        <div class="the-progress">
+            <span class="red" data-progress="20%"></span>
+        </div>
+    </div>
+    <div class="skill">
+        <h3>Css <span></span></h3>
+        <div class="the-progress">
+            <span class="green" data-progress="60%"></span>
+        </div>
+    </div>
+    <div class="skill">
+        <h3>JavaScript <span></span></h3>
+        <div class="the-progress">
+            <span class="blue" data-progress="80%"></span>
+        </div>
+    </div>
+    <div class="skill">
+        <h3>jQuery <span></span></h3>
+        <div class="the-progress">
+            <span class="black" data-progress="90%"></span>
+        </div>
+    </div>
+    <!-- Start Progress -->
+    <!-- Start Images -->
+    <div class="photos">
+        <div class="main-image">
+            <span class="chevron chevron-left"><i class="fa fa-chevron-left" aria-hidden="true"></i></span>
+            <span class="chevron chevron-right"><i class="fa fa-chevron-right" aria-hidden="true"></i></span>
+            <img src="image/alex-wong-l5Tzv1alcps-unsplash-940x650.jpg">
+        </div>
+        <div class="images">
+            <img class="selected" src="image/alex-wong-l5Tzv1alcps-unsplash-940x650.jpg" alt="">
+            <img src="image/comm-project-940x650.png" alt="">
+            <img src="image/konek-quoi-faire-québec-940x650.jpg" alt="">
+            <img src="image/graphane-940x650.jpg" alt="">
+            <img src="image/Come-and-meet-us-Djura-4-940x650.jpg" alt="">
+            <img src="image/Poppin_Full_2_940x650@2X_68933af991eaea20badabef7473b91ae.jpg" alt="">
+        </div>
+    </div>
+    <!-- End Images -->
+    <!-- Start Projects -->
+    <div class="projects">
+        <div class="project">
+            <h3>Project 1</h3>
+            <span class="date">10/9/2022</span>
+            <img src="image/project1.png" alt="">
+            <i class="fa fa-plus" aria-hidden="true"></i>
+            <p>Lorem Ipsum is simply dummy</p>
+        </div>
+        <div class="project">
+            <h3>Project 2</h3>
+            <span class="date">10/9/2022</span>
+            <img src="image/project2.png" alt="">
+            <i class="fa fa-plus" aria-hidden="true"></i>
+            <p>Lorem Ipsum is simply dummy</p>
+        </div>
+    </div>
+    <!-- End Projects -->
+    <!-- Start Forms -->
+    <div class="forms">
+        <form action="">
+            <div class="form">
+                <input class="input-unicode" type="text" required="required" placeholder="Type Your Name">
+                <span class="input-mess">Please Fill This Field</span>
+                <div class="unicode"></div>
+            </div>
+            <div class="form">
+                <input class="auto-direction" type="email" required="required" placeholder="Type Your Email">
+                <span class="input-mess">Please Fill This Field</span>
+            </div>
+            <div class="form">
+                <input type="password" required="required" placeholder="Type Your Password">
+                <span class="input-mess">Please Fill This Field</span>
+            </div>
+            <div>
+                <input class="input-comma" type="text" placeholder="Please Press On [,]">
+                <div class="comma-pressed"></div>
+            </div>
+            <div class="form">
+                <textarea required="required" placeholder="Type Your Message"></textarea>
+                <span class="input-mess">Please Fill This Field</span>
+            </div>
+            <input type="file">
+            <input type="submit" value="Send">
+        </form>
+    </div>
+    <!-- End Forms -->
+</div>
+<div id="about-us" class="felo">
+    <h2>About Us</h2>
+    <!-- Start Trim Paragraph -->
+    <div class="trim-paragraph">
+        <p class="trim-p-one">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text ever
+            since the 1500s, when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book. It has survived not only five
+            centuries.
+        </p>
+        <p class="trim-p-two">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text ever
+            since the 1500s, when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book. It has survived not only five
+            centuries.
+        </p>
+        <p class="trim-p-three">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text ever
+            since the 1500s, when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book. It has survived not only five
+            centuries.
+        </p>
+    </div>
+    <!-- End Trim Paragraph -->
+    <!-- Start Button Bounce -->
+    <div class="button-bounce">
+        <button class="bounce bounce-one">
+            Bounce One
+        </button>
+        <button class="bounce bounce-two">
+            Bounce Two
+        </button>
+        <button class="bounce bounce-three">
+            Bounce Three
+        </button>
+    </div>
+    <!-- End Button Bounce -->
+    <!-- Start Same Heights -->
+    <div class="same-height">
+        <div class="div-one">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard.
+        </div>
+        <div class="div-two">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took.
+        </div>
+        <div class="div-one">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text ever since
+            the 1500s, when an unknown printer took a galley of type and scrambled
+            it to make a type specimen book. It has survived not only five centuries
+        </div>
+    </div>
+    <!-- End Same Heights -->
+    <!-- Start Cards -->
+    <div class="cards-divs">
+        <div class="cards">
+            <div class="card card-one">Kero</div>
+            <div class="card card-two">George</div>
+            <div class="card card-three">Abanoub</div>
+            <div class="card card-four">Femoon</div>
+            <div class="card card-five">Magdy</div>
+            <div class="card card-sex">Abd</div>
+            <div class="card card-seven">Abram</div>
+            <div class="card card-eight">Felobes</div>
+        </div>
+    </div>
+    <!-- End Cards -->
+    <!-- Start Blink Warning -->
+    <div class="blink-warning">
+        <h3 class="blink">This Is Blink Warning</h3>
+    </div>
+    <!-- End Blink Warning -->
+</div>
+<div id="services" class="felo">
+    <h2>Services</h2>
+    <!-- Start To do Liste -->
+    <div class="container">
+        <div class="todo-list">
+            <h3>Todo List</h3>
+            <ul class="ul-todo">
+                <li>Felobes Abd Sadek</li>
+                <li>Abram Abd Sadek</li>
+                <li>Abd Sadek Bebawy</li>
+            </ul>
+            <form class="form-todo" method="POST">
+                <input class="input-todo" type="text" name="task" placeholder="Type Your Tasks">
+            </form>
+        </div>
+    </div>
+    <!-- End To do Liste -->
+    <!-- start Writing -->
+    <div class="container">
+        <p class="typer" data-text="Lorem Ipsum is simply dummy text of
+        the printing and typesetting industry. Lorem Ipsum has been the
+        industry's standard dummy text ever sincethe 1500s, when an unknown
+        printer took a galley of type and scrambled it to make a type specimen
+        book. It has survived not only five centuries">
+        </p>
+    </div>
+    <!-- End Writing -->
+    <!-- Start Table Price -->
+    <div class="container">
+        <table class="table">
+            <tr>
+                <td>Name</td>
+                <td>Value</td>
+                <td>Price</td>
+            </tr>
+            <tr>
+                <td>Date One</td>
+                <td>10 Items</td>
+                <td class="price">100</td>
+            </tr>
+            <tr>
+                <td>Date Two</td>
+                <td>20 Items</td>
+                <td class="price">200</td>
+            </tr>
+            <tr>
+                <td>Date Three</td>
+                <td>30 Items</td>
+                <td class="price">300</td>
+            </tr>
+            <tr>
+                <td>Date Four</td>
+                <td>40 Items</td>
+                <td class="price">400</td>
+            </tr>
+            <tr>
+                <td colspan="2">Total:</td>
+                <td class="the-total"></td>
+            </tr>
+        </table>
+    </div>
+    <!-- End Table Price -->
+    <!-- Start Auto Change Notes -->
+    <div class="container">
+        <div class="auto-notes">
+            <h3>Auto Change Notes</h3>
+            <ul class="ul-auto-notes">
+                <li class="active">This Is Line Number One Test</li>
+                <li>This Is Line Number Two Test</li>
+                <li>This Is Line Number Three Test</li>
+                <li>This Is Line Number Four Test</li>
+                <li>This Is Line Number Five Test</li>
+                <li>This Is Line Number Sex Test</li>
+            </ul>
+        </div>
+    </div>
+    <!-- End Auto Change Notes -->
+    <!-- Start Dynamic Tabs -->
+    <div class="container">
+        <span class="switch-span">Switch</span>
+        <div class="tabs">
+            <div class="tabs-ul">
+                <ul>
+                    <li class="active" data-content=".content-one">One</li>
+                    <li data-content=".content-two">Two</li>
+                    <li data-content=".content-three">Three</li>
+                    <li data-content=".content-four">Four</li>
+                    <li data-content=".content-five">Five</li>
+                </ul>
+            </div>
+            <div class="tab-divs">
+                <div class="content-one">This Is Content One</div>
+                <div class="content-two">This Is Content Two</div>
+                <div class="content-three">This Is Content Three</div>
+                <div class="content-four">This Is Content Four</div>
+                <div class="content-five">This Is Content Five</div>
+            </div>
+        </div>
+    </div>
+    <!-- End Dynamic Tabs -->
+    <!-- Start Email Suggest Box -->
+    <div class="container">
+        <form action="">
+            <input
+                    class="email-suggest"
+                    type="email"
+                    name="email"
+                    autocomplete="off"
+                    placeholder="Type Your Email" />
+            <ul class="ul-suggest">
+                <li>@Gmail.com</li>
+                <li>@Yahoo.com</li>
+                <li>@Felo.com</li>
+                <li>@Beroo.com</li>
+            </ul>
+        </form>
+    </div>
+    <!-- End Email Suggest Box -->
+</div>
+<div id="portfolio" class="felo">
+    <h2>Portfolio</h2>
+</div>
+<div id="solutions" class="felo">
+    <h2>Solutions</h2>
+</div>
+<div id="contact-us" class="felo">
+    <h2>Contact Us</h2>
+</div>
+<!-- End Section -->
+<!-- Start Button-Scroll -->
+<a class="house"><i class="fa fa-home" aria-hidden="true"></i></a>
+<!-- End Button-Scroll -->
+<!-- Start Pupop -->
+<div class="popup first-popup">
+    <div class="inner">
+        <h2>This Is 1st Popup</h2>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text.
+        </p>
+        <button class="btn btn-primary close">Close</button>
+    </div>
+</div>
+<div class="popup scend-popup">
+    <div class="inner">
+        <h2>This Is 2nd Popup</h2>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text.
+        </p>
+        <button class="btn btn-primary close">Close</button>
+    </div>
+</div>
+<!-- End Pupop -->
+<!-- Lorem Ipsum is simply dummy text of the printing and typesetting
+industry. Lorem Ipsum has been the industry's standard dummy text ever since
+ the 1500s, when an unknown printer took a galley of type and scrambled
+  it to make a type specimen book. It has survived not only five centuries-->
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+
+
+
+
+
+
+
+
+
+</html>
